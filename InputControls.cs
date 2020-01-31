@@ -10,7 +10,7 @@ public class InputControls : MonoBehaviour, GeneralInput.IKeyboardInputActions
 
     void GeneralInput.IKeyboardInputActions.OnSpace(InputAction.CallbackContext context)
     {
-       //This is to call whatever function from the space button
+        playerController.Fly(context.ReadValue<float>());//This is to call whatever function from the space button
     }
 
     void GeneralInput.IKeyboardInputActions.OnArrowKeys(InputAction.CallbackContext context)

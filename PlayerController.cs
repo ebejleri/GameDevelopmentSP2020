@@ -52,6 +52,20 @@ public class PlayerController : MonoBehaviour
     {
         movementVector = movement;
     }
+    public void Fly(float ohNo)
+    {
+        /*
+        if (ohNo == 0)
+        {
+            rb.useGravity = false;
+            rb.AddForce(new Vector3(0, 2, 0));
+        }
+        else
+        {
+            rb.useGravity = true;
+        }
+        */
+    }
 
     private void PlayerMovement()
     {
